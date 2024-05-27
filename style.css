@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* colors */
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--DarkGrey: hsl(0, 0%, 12%);
+--OffBlack: hsl(0, 0%, 8%);
+--blue:hsl(228, 45%, 44%);
+
+    /* font_size */
+--paragraph: 14px;
+
+
+    /* font_family */
+    --I: "Inter";
+    /* , sans-serif */
+    
+    /* font-weight */
+    --regular:400;
+    --semi:600;
+    --bold:700;
+}
+
+
+body{
+    background-color: var(--OffBlack);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    margin: auto;
+    font-family: var(--I);
+    font-size: var(--paragraph);
+}
+.main{
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: fit-content;
+    background-color: var(--DarkGrey);
+    border-radius: 7px;
+
+}
+
+
+h1{
+    font-weight: var(--semi);
+    color: var(--White);
+    margin-bottom: 8px;
+}
+h3{
+    color: var(--Green);
+    font-weight: var(--semi);
+    margin-bottom: 29px;
+}
+h4{
+    color: var(--White);
+    font-weight: var(--regular);
+    margin-bottom: 25px;
+}
+
+.main__img{
+    margin-bottom: 30px;
+    width: 26%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.main__contact{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 17px;
+}
+.btn{
+    color: var(--White);
+    font-weight: var(--bold);
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    cursor: url(assets/images/point.png) ,auto;
+    height: 2.5rem;
+    border-radius: 7px;
+    background-color: var(--Grey);
+
+}
+.btn:hover{
+background-color: var(--Green);
+color: var(--OffBlack);
+}
